@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/baseline_add_shopping"
+            android:title="@string/menu_register" />
+        <item
+            android:id="@+id/nav_sale"
+            android:icon="@drawable/baseline_shopping_cart"
+            android:title="@string/menu_sale" />
+
+    </group>
+</menu>
