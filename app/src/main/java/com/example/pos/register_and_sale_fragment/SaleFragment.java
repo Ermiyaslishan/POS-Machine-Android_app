@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -39,13 +38,12 @@ public class SaleFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_sale, container, false);
 
         searchBox = view.findViewById(R.id.sale_code_value1);
-
         searchButton = view.findViewById(R.id.btn_search);
         addButton = view.findViewById(R.id.btn_add);
         resetButton = view.findViewById(R.id.sale_reset);
         paidButton = view.findViewById(R.id.paid);
 
-        //resultTableLayout = view.findViewById(R.id.result_table);
+
         dbHelper = new PosDB(getActivity());
         code_value = view.findViewById(R.id.unit_price_value);
         item_value = view.findViewById(R.id.sale_item_value1);
@@ -67,7 +65,6 @@ public class SaleFragment extends Fragment {
         mRecyclerView.setAdapter(adapter);
 
 
-        //resultTableLayout = view.findViewById(R.id.result_table);
 
         //Search Button Clicked
         searchButton.setOnClickListener(new View.OnClickListener() {
